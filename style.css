@@ -44,7 +44,7 @@ img{
 
 /*-- style first_part --*/
 #welcome_part{
-  background: url('asset/bg-tablet.jpg') no-repeat;
+  background: url('bg-tablet.jpg') no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
   -moz-background-size: cover;
