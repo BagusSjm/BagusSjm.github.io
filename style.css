@@ -14,7 +14,7 @@ Description : Pekanbaru Developer for creative web developer
 /*-- css reset. setting deafault css--*/
 *{
   margin: 0; padding: 0;
-  font-family: verdana; font-weight: normal;
+   font-family: 'Ubuntu', sans-serif; font-weight: normal;
 }
 a{
   text-decoration: none;
