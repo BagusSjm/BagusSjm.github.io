@@ -1,7 +1,7 @@
 /*
 theme name : Pekanbaru digital creative theme
 theme URL : http://pekanbarudigtive.com
-authhor : Bagus Sujatmiko S.T
+authhor : Bagus Sujatmiko
 Description : Pekanbaru Developer for creative web developer
 
 */
@@ -14,7 +14,7 @@ Description : Pekanbaru Developer for creative web developer
 /*-- css reset. setting deafault css--*/
 *{
   margin: 0; padding: 0;
-   font-family: 'Ubuntu', sans-serif; font-weight: normal;
+  font-family: 'Oxygen Mono', monospace; font-weight: normal;
 }
 a{
   text-decoration: none;
