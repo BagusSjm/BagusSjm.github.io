@@ -3,6 +3,7 @@
      <head>
                <meta charset="utf-8">
                <title>Form Pendaftaran</title>
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
                <link href='https://fonts.googleapis.com/css?family=Oxygen+Mono' rel='stylesheet' type='text/css'>
                <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
                <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -12,7 +13,11 @@
                     margin: 0; padding: 0;
                }
                body{
-                    background-color: rgba(216, 216, 216, 0.51);
+                    background: #4ECDC4; /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to left, #4ECDC4 , #556270); /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to left, #4ECDC4 , #556270); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    width: 100%; height: 100%;
+                    overflow: hidden;
                }
                h1,h2,h3,h4,h5,h6{
                     font-weight: normal;
@@ -24,6 +29,7 @@
                         box-sizing: border-box;
                         border-radius: 7px;
                         border: 1.5px rgba(117, 117, 117, 0.54) solid;
+                        box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24);
                }
                .pnlHead{
                         width: 100%;
@@ -80,6 +86,7 @@
                     width: 17px;
                     height: 17px;
                }
+
                select{
                     font-size: 17px;
                     color: rgb(112, 118, 124);
@@ -97,7 +104,8 @@
                     background-color: rgb(32, 168, 218);
                     color: white;
                }
-               input[type="submit"]:hover,input[type="button"]:hover,select:hover{
+               input[type="submit"]:hover,input[type="button"]:hover,select:hover,
+               input[type="radio"],input[type="checkbox"]{
                     cursor: pointer;
                }
                .optVal{
@@ -105,6 +113,7 @@
                     font-weight: normal;
                     line-height: 15px;
                }
+
           </style>
      </head>
 
@@ -117,13 +126,15 @@
                          Show Your Participate
                     </span>
                </div>
+
                <div class="pnlBody">
                     <h2>Daftarkan dirimu di Lomba <b style="color:#20a8da">Loyalogin</b></h2>
                     <h3>Jiwa Muda, Lancang Berkarya!</h3>
 
-                    <form class="role-control"  method="get">
+                    <form class="role-control"  method="get" >
+
                          <input type="text" name="name" value="" placeholder="Nama Lengkap..">
-                         <input type="email" name="email" value="" placeholder="Email yang dapat dihubungi ..">
+                         <input type="email" name="email" value="" placeholder="Email yang dapat dihubungi .." required="email">
                          <input type="password" name="pass" value="" placeholder="password ..">
                          <!-- ask the user like label data for radio button -->
                          <input type="radio" name="gender" value="Male" >
@@ -143,17 +154,21 @@
                          <input type="checkbox" name="Data" value="js">
                          <span class="optVal">Javacsript</span><br>
                          <input type="search" name="other" placeholder="Skill Lainya ..">
+
                          <select  name="prodi" >
                               <option value="TIF">Teknik Informatika</option>
                               <option value="SI">Sistem Informasi</option>
                               <option value="TI">Teknik Industri</option>
                               <option value="MTK">Matematika Terapan</option>
                          </select>
+
                          <input type="submit" name="send" value="Daftar" >
                     </form>
 
                </div>
+
           </div>
 
      </body>
+
 </html>
