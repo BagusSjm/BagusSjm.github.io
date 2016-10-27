@@ -1,174 +1,190 @@
 <!DOCTYPE html>
 <html>
      <head>
-               <meta charset="utf-8">
-               <title>Form Pendaftaran</title>
-               <meta name="viewport" content="width=device-width, initial-scale=1.0">
-               <link href='https://fonts.googleapis.com/css?family=Oxygen+Mono' rel='stylesheet' type='text/css'>
-               <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-               <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+          <meta charset="utf-8">
+          <title>Form pendaftaran</title>
+          <link rel="shorcut icon" href="http://megaicons.net/static/img/icons_sizes/6/58/512/edge-code-icon.png" >
+          <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+          <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
           <style media="screen">
                *{
-                    font-family: 'Oxygen Mono','Ubuntu',verdana;
-                    margin: 0; padding: 0;
+                    padding: 0; margin: 0;
+                    font-family: 'Lato', sans-serif;
                }
                body{
-                    background: #4ECDC4; /* fallback for old browsers */
-                    background: -webkit-linear-gradient(to left, #4ECDC4 , #556270); /* Chrome 10-25, Safari 5.1-6 */
-                    background: linear-gradient(to left, #4ECDC4 , #556270); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                    width: 100%; height: 100%;
-                    overflow: hidden;
-               }
-               h1,h2,h3,h4,h5,h6{
-                    font-weight: normal;
-               }
-               .wrapper{
-                        background-color: rgb(255, 255, 255);
-                        width: 42%;
-                        margin: 30px auto;
-                        box-sizing: border-box;
-                        border-radius: 7px;
-                        border: 1.5px rgba(117, 117, 117, 0.54) solid;
-                        box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24);
-               }
-               .pnlHead{
-                        width: 100%;
-                        height: auto;
-                        border-bottom: 1.5px rgb(32, 168, 218) solid;
-                        box-sizing: border-box;
-                        padding: 4px 12px;
-                        background-color: #dedede;
-                        border-top-left-radius: inherit;
-                        border-top-right-radius: inherit;
-               }
-               .pnlHead span{
-                   font-size: 22px;
-                   font-family: 'Oxygen Mono';
-                   font-weight: 500;
-                   color: #20a8da;
-                   line-height: 45px;
-               }
-               .pnlBody{
-                    padding: 9px 12px;
-                    width: 100%;
-                    height: auto;
-                    box-sizing: border-box;
-               }
-               .role-control{
-                    width: 67%;
-                    margin: 0 auto;
-                    height: auto;
-                    box-sizing: border-box;
-                    padding: 6px;
-               }
-               input:focus,select{
-                    outline: 0;
-               }
-               input[type="text"],input[type="password"],input[type="email"],
-               input[type="search"],input[type="submit"],input[type="button"],
-               input[type="date"],select{
-                    margin: 6px;
-                    box-sizing: border-box;
-                    height: auto;
-                    padding: 6px;
-                    border-radius: 4.5px;
-                    font-weight: lighter;
-                    border: 1.5px rgba(117, 117, 117, 0.54) solid;
-               }
-               input[type="text"],input[type="password"],input[type="email"],
-               input[type="search"]{
-                    width: 100%;
-                    font-size: 16px;
-                    color: rgb(135, 138, 136);
-               }
-               input[type="checkbox"],input[type="radio"]{
-                    margin: 6.5px;
-                    width: 17px;
-                    height: 17px;
+                    background: #4ECDC4;
+                    background: -webkit-linear-gradient(to left, #4ECDC4 , #556270);
+                    background: linear-gradient(to left, #4ECDC4 , #556270);
                }
 
-               select{
-                    font-size: 17px;
-                    color: rgb(112, 118, 124);
-                    width: auto;
+               #wrapper{
+                    width: 40%;
+                    margin: 5% auto;
+               }
+
+               .panel{
+                    border-radius: 23px;
+                    background-color: rgb(255, 255, 255);
+                    width: 100%;
+                    height: auto;
+                    margin: 3px 5px;
+                    display: block;
+                    box-sizing: border-box;
+                    box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24);
+                    position: relative;
+               }
+
+               .pnlHead{
+                    padding: 10px 16px;
+                    width: 100%;
+                    height: auto;
+                    background-color:rgba(11, 156, 143, 0.63);
+                    border-bottom: 1.5px rgba(1, 1, 1, 0.4) solid;
+                    box-sizing: border-box;
+                    border-top-left-radius: inherit;
+                    border-top-right-radius: inherit;
+                    margin-bottom: 5px;
+               }
+               .pnlHead>h1,.pnlHead>h2,.pnlHead>p{
+                    font-size: 24px;
                     font-weight: lighter;
-               }
-               input[type="submit"],input[type="button"]{
-                    background-color: rgba(180, 180, 180, 0.3);
-                    color: black;
-                    font-size: 18px;
-                    font-weight: 600;
-                    width: auto;
-               }
-               input[type="submit"]:focus,input[type="button"]:focus{
-                    background-color: rgb(32, 168, 218);
+                    white-space: nowrap;
                     color: white;
                }
+
+               .pnlBody{
+                    width: 100%;
+                    height: auto;
+                    box-sizing: border-box;
+                    padding: 10px 15px;
+                    margin: 9px auto;
+               }
+
+               .role-control{
+                    width: 100%;
+                    height: auto;
+                    padding: 9px 8px;
+                    box-sizing: border-box;
+               }
+
+               input{
+                    border: 0;
+               }
+               input:focus,select:focus{
+                    outline: 0;
+               }
+
+               input[type="text"],input[type="password"],input[type="email"],
+               input[type="search"],input[type="submit"],input[type="button"],
+               input[type="date"],select,label{
+                    max-width: 100%;
+                    box-sizing: border-box;
+                    width: inherit;
+                    margin: 7.4px 2px;
+                    height: auto;
+                    font-size: 16px;
+                    color: rgba(8, 169, 180, 0.85);
+                    font-weight: lighter;
+                    padding: 8px 8px 8px 0px;
+                    border-bottom: 2px rgba(140, 138, 138, 0.22) solid;
+               }
+
+               input[type="text"]:focus, input[type="email"]:focus,
+               input[type="password"]:focus,input[type="search"]:focus{
+                    border-bottom: 3.5px rgba(8, 169, 180, 0.85) solid;
+                    box-shadow: 0 3px 7px 0 rgba(121, 154, 193, 0.59);
+                    padding-left: 8px;
+               }
+
+               input[type="submit"],input[type="button"]{
+                    background-color: rgba(180, 180, 180, 0.3);
+                    font-size: 18px;
+                    font-weight: 600;
+                    border-radius: 6px;
+               }
+
                input[type="submit"]:hover,input[type="button"]:hover,select:hover,
                input[type="radio"],input[type="checkbox"]{
                     cursor: pointer;
                }
-               .optVal{
-                    font-size: 15px;
-                    font-weight: normal;
-                    line-height: 15px;
+
+               input[type="submit"]:focus,input[type="button"]:focus{
+                    background-color: white;
+                    border: 2px rgba(140, 138, 138, 0.22) solid;
+               }
+
+               input[type="checkbox"],input[type="radio"]{
+                    width: 15px;
+                    height: 15px;
+                    color: rgba(8, 169, 180, 0.85);
+                    margin: 7px;
+               }
+
+               select{
+                    border: 0px 0px 2px 0px;
+                    border-color:  rgba(140, 138, 138, 0.22);
+                    border-radius: 6px;
                }
 
           </style>
+
      </head>
 
-     <!-- start the body data  -->
      <body>
-          <div class="wrapper">
-               <div class="pnlHead">
-                    <span>
-                         <i class="fa fa-bullhorn" style="color:rgb(32, 168, 218);"></i>
-                         Show Your Participate
-                    </span>
-               </div>
 
-               <div class="pnlBody">
-                    <h2>Daftarkan dirimu di Lomba <b style="color:#20a8da">Loyalogin</b></h2>
-                    <h3>Jiwa Muda, Lancang Berkarya!</h3>
+          <section id="wrapper">
 
-                    <form class="role-control"  method="get" >
+               <section class="panel">
 
-                         <input type="text" name="name" value="" placeholder="Nama Lengkap..">
-                         <input type="email" name="email" value="" placeholder="Email yang dapat dihubungi .." required="email">
-                         <input type="password" name="pass" value="" placeholder="password ..">
-                         <!-- ask the user like label data for radio button -->
-                         <input type="radio" name="gender" value="Male" >
-                         <span class="optVal">Male</span>
-                         <input type="radio" name="gender" value="Female" >
-                         <span class="optVal">Female</span>
-                         <br><br>
-                         <span class="optVal">Skill : </span><br>
-                         <input type="checkbox" name="Data" value="html">
-                         <span class="optVal">HTML 5</span><br>
-                         <input type="checkbox" name="Data" value="css">
-                         <span class="optVal">CSS 3</span><br>
-                         <input type="checkbox" name="Data" value="Java">
-                         <span class="optVal">Java Desk</span><br>
-                         <input type="checkbox" name="Data" value="php">
-                         <span class="optVal">PHP 7.0</span><br>
-                         <input type="checkbox" name="Data" value="js">
-                         <span class="optVal">Javacsript</span><br>
-                         <input type="search" name="other" placeholder="Skill Lainya ..">
+                    <section class="pnlHead">
+                         <h1>
+                              <b class="fa fa-credit-card-alt"></b>
+                              Lengkapi registrasi e-KTP anda
+                         </h1>
+                    </section>
 
-                         <select  name="prodi" >
-                              <option value="TIF">Teknik Informatika</option>
-                              <option value="SI">Sistem Informasi</option>
-                              <option value="TI">Teknik Industri</option>
-                              <option value="MTK">Matematika Terapan</option>
-                         </select>
+                    <section class="pnlBody">
 
-                         <input type="submit" name="send" value="Daftar" >
-                    </form>
+                         <form class="role-control"  method="get" novalidate="">
 
-               </div>
+                              <input type="text" name="nama" value="" placeholder="nama.." style="width:46%;margin-right:6%">
+                              <input type="text" name="nim" value="" placeholder="nim.." style="width:46%">
+                              <input type="email" name="email" value="" placeholder="email.." style="width:46%;margin-right:6%">
+                              <input type="password" name="pass" value="" placeholder="pass.." style="width:46%">
+                              <input type="text" name="addres" value="" placeholder="alamat..">
 
-          </div>
+                              <input type="radio" name="gender" value="pria"><span>Pria</span>
+                              <input type="radio" name="gender" value="Wanita"><span>Wanita</span>
+
+                              <br>
+                              <label for="status">Status : </label>
+                              <select  name="status" style="width:30%">
+                                   <option value="Kawin">Kawin</option>
+                                   <option value="Belum">Belum Kawin</option>
+                                   <option value="tidak">Tidak Kawin</option>
+                              </select>
+                              <br>
+
+                              <label for="ttl">tempat tanggal lahir : </label>
+                              <input type="date" name="ttl" value="" style="width:45%">
+
+                              <input type="submit" name="name" value="daftar">
+
+                         </form>
+
+                    </section>
+
+               </section>
+
+          </section>
+
+         <section id="data">
+            <ul>
+               <li class="index"></li>
+               <li class="index"></li>
+               <li class="index"></li>
+            </ul>
+         </section>
 
      </body>
-
 </html>
