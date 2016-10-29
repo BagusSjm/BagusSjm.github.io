@@ -1,0 +1,265 @@
+     *{
+          padding: 0; margin: 0;
+          font-family: 'Lato', sans-serif;
+     }
+     body{
+          background: #4ECDC4;
+          background: -webkit-linear-gradient(to left, #4ECDC4 , #556270);
+          background: -moz-linear-gradient(to left, #4ECDC4 , #556270);
+          background: -o-linear-gradient(to left, #4ECDC4 , #556270);
+          background: -ms-linear-gradient(to left, #4ECDC4 , #556270);
+          background: linear-gradient(to left, #4ECDC4 , #556270);
+     }
+
+     #wrapper{
+          width: 40%;
+          margin: 5% auto;
+     }
+
+     .panel{
+          border-radius: 23px;
+          background-color: rgb(255, 255, 255);
+          width: 100%;
+          height: auto;
+          margin: 3px 5px;
+          display: block;
+          box-sizing: border-box;
+          box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24);
+          position: relative;
+     }
+
+     .pnlHead{
+          padding: 10px 16px;
+          width: 100%;
+          height: auto;
+          background-color: rgba(11, 156, 143, 0.63);
+          border-bottom: 1.5px rgba(1, 1, 1, 0.4) solid;
+          box-sizing: border-box;
+          border-top-left-radius: inherit;
+          border-top-right-radius: inherit;
+          margin-bottom: 5px;
+     }
+     .pnlHead>h1,.pnlHead>h2,.pnlHead>p{
+          font-size: 24px;
+          font-weight: lighter;
+          white-space: nowrap;
+          color: white;
+     }
+
+     .pnlBody{
+          width: 100%;
+          height: auto;
+          box-sizing: border-box;
+          padding: 10px 15px;
+          margin: 9px auto;
+     }
+
+     .role-control{
+          width: 100%;
+          height: auto;
+          padding: 9px 8px;
+          box-sizing: border-box;
+     }
+
+     input{
+          border: 0;
+     }
+     input:focus,select:focus{
+          outline: 0;
+     }
+
+     input[type="text"],input[type="password"],input[type="email"],
+     input[type="search"],input[type="submit"],input[type="button"],
+     input[type="date"],select,label{
+          max-width: 100%;
+          box-sizing: border-box;
+          width: inherit;
+          margin: 7.4px 2px;
+          height: auto;
+          font-size: 16px;
+          color: rgba(8, 169, 180, 0.85);
+          font-weight: lighter;
+          padding: 8px 8px 8px 0px;
+          border-bottom: 2px rgba(140, 138, 138, 0.22) solid;
+     }
+
+     input[type="text"]:focus, input[type="email"]:focus,
+     input[type="password"]:focus,input[type="search"]:focus{
+          border-bottom: 2px rgba(8, 169, 180, 0.85) solid;
+          box-shadow: 0 3px 7px 0 rgba(121, 154, 193, 0.59);
+          padding-left: 8px;
+     }
+
+
+     input[type="submit"],input[type="button"]{
+          background-color: rgba(180, 180, 180, 0.3);
+          font-size: 18px;
+          font-weight: 600;
+          border-radius: 6px;
+     }
+
+     input[type="submit"]:hover,input[type="button"]:hover,select:hover,
+     input[type="radio"],input[type="checkbox"]{
+          cursor: pointer;
+     }
+
+     input[type="submit"]:focus,input[type="button"]:focus{
+          background-color: white;
+          border: 2px rgba(140, 138, 138, 0.22) solid;
+     }
+
+     input[type="checkbox"],input[type="radio"]{
+          width: 15px;
+          height: 15px;
+          color: rgba(8, 169, 180, 0.85);
+          margin: 7px;
+     }
+
+     select{
+          border: 0px 0px 2px 0px;
+          border-color:  rgba(140, 138, 138, 0.22);
+          border-radius: 6px;
+     }
+
+     .bxForm{
+        display: block;
+        margin: 15px 8px;
+        padding: 5px;
+     }
+
+
+/*---- media responsive use the css query ------*/
+
+
+@media screen and (max-width:480px){
+   *{
+      margin: 0; padding: 0;
+      font-family: 'Lato', monospace;
+   }
+
+   body{
+      background: #4ECDC4;
+      background: -webkit-linear-gradient(to left, #4ECDC4 , #556270);
+      background: -moz-linear-gradient(to left, #4ECDC4 , #556270);
+      background: -o-linear-gradient(to left, #4ECDC4 , #556270);
+      background: -ms-linear-gradient(to left, #4ECDC4 , #556270);
+      background: linear-gradient(to left, #4ECDC4 , #556270);
+   }
+
+   #wrapper{
+        width: 85%;
+        margin: 5% auto;
+   }
+
+   .panel{
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: auto;
+        margin: 3px 5px;
+        display: block;
+        box-sizing: border-box;
+        box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24);
+        position: relative;
+   }
+
+   .pnlHead{
+        padding: 10px 16px;
+        width: 100%;
+        height: auto;
+        background-color: rgba(11, 156, 143, 0.63);
+        border-bottom: 1.5px rgba(1, 1, 1, 0.4) solid;
+        box-sizing: border-box;
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+        margin-bottom: 5px;
+   }
+   .pnlHead>h1,.pnlHead>h2,.pnlHead>p{
+        font-size: 16.4px;
+        font-weight: lighter;
+        white-space: nowrap;
+        color: white;
+   }
+
+   .pnlBody{
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 10px 8px;
+        margin: 9px auto;
+   }
+
+   .role-control{
+        width: 100%;
+        height: auto;
+        padding: 9px 8px;
+        box-sizing: border-box;
+   }
+
+   input{
+        border: 0;
+   }
+   input:focus,select:focus{
+        outline: 0;
+   }
+
+   input[type="text"],input[type="password"],input[type="email"],
+   input[type="search"],input[type="submit"],input[type="button"],
+   input[type="date"],select,label{
+        max-width: 100%;
+        box-sizing: border-box;
+        width: inherit;
+        margin: 7.4px 2px;
+        height: auto;
+        font-size: 16px;
+        color: rgba(8, 169, 180, 0.85);
+        font-weight: lighter;
+        padding: 8px 8px 8px 0px;
+        border-bottom: 2px rgba(140, 138, 138, 0.22) solid;
+   }
+
+   input[type="text"]:focus, input[type="email"]:focus,
+   input[type="password"]:focus,input[type="search"]:focus{
+        border-bottom: 2px rgba(8, 169, 180, 0.85) solid;
+        box-shadow: 0 3px 7px 0 rgba(121, 154, 193, 0.59);
+        padding-left: 8px;
+   }
+
+   input[type="submit"],input[type="button"]{
+        background-color: rgba(180, 180, 180, 0.3);
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 6px;
+   }
+
+   input[type="submit"]:hover,input[type="button"]:hover,select:hover,
+   input[type="radio"],input[type="checkbox"]{
+        cursor: pointer;
+   }
+
+   input[type="submit"]:focus,input[type="button"]:focus{
+        background-color: white;
+        border: 2px rgba(140, 138, 138, 0.22) solid;
+   }
+
+   input[type="checkbox"],input[type="radio"]{
+        width: 15px;
+        height: 15px;
+        color: rgba(8, 169, 180, 0.85);
+        margin: 7px;
+   }
+
+   select{
+        border: 0px 0px 2px 0px;
+        border-color:  rgba(140, 138, 138, 0.22);
+        border-radius: 6px;
+   }
+
+   .bxForm{
+      display: block;
+      margin: 5px 0;
+      padding: 5px;
+      box-sizing: border-box;
+   }
+
+}
