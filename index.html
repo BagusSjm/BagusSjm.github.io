@@ -28,26 +28,32 @@
 
                          <form class="role-control"  method="post" novalidate="">
 
-                              <input type="text" name="nama" value="" placeholder="nama.." style="width:46%;margin-right:5%" >
-                              <input type="text" name="nim" value="" placeholder="nim.." style="width:46%" >
-                              <input type="email" name="email" value="" placeholder="email.." style="width:46%;margin-right:5%" >
-                              <input type="password" name="pass" value="" placeholder="pass.." style="width:46%" >
+                              <input type="text" name="nama" value="" placeholder="nama.." style="width:45%">
+                              <input type="text" name="nim" value="" placeholder="nim.." style="width:45%;float:right">
+                              <input type="email" name="email" value="" placeholder="email.." style="width:45%">
+                              <input type="password" name="pass" value="" placeholder="pass.." style="width:45%;float:right">
                               <input type="text" name="addres" value="" placeholder="alamat..">
 
-                              <input type="radio" name="gender" value=""><span>Pria</span>
-                              <input type="radio" name="gender" value=""><span>Wanita</span>
+                              <div class="gender bxForm">
+                                 <label for="gender">Gender : </label>
+                                 <input type="radio" name="gender" value=""><span>Pria</span>
+                                 <input type="radio" name="gender" value=""><span>Wanita</span>
+                              </div>
 
-                              <br>
-                              <label for="status">Status : </label>
-                              <select  name="status" style="width:30%">
-                                   <option value="Kawin">Kawin</option>
-                                   <option value="Belum">Belum Kawin</option>
-                                   <option value="tidak">Tidak Kawin</option>
-                              </select>
-                              <br>
+                              <div class="state bxForm">
+                                  <label for="status">Status : </label>
+                                  <select name="status" style="width:30%">
+                                      <option value="Kawin">Kawin</option>
+                                      <option value="Belum">Belum Kawin</option>
+                                      <option value="tidak">Tidak Kawin</option>
+                                  </select>
+                              </div>
 
-                              <label for="ttl">tempat tanggal lahir : </label>
-                              <input type="date" name="ttl" value="" style="width:45%">
+
+                              <div class="bxForm ttl">
+                                 <label for="ttl">tempat tanggal lahir : </label>
+                                 <input type="date" name="ttl" value="" style="width:45%">
+                              </div>
 
                               <input type="submit" name="name" value="daftar">
 

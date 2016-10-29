@@ -90,9 +90,6 @@
           padding-left: 8px;
      }
 
-     .col2{
-        margin-right: 5%;
-     }
 
      input[type="submit"],input[type="button"]{
           background-color: rgba(180, 180, 180, 0.3);
@@ -122,6 +119,12 @@
           border: 0px 0px 2px 0px;
           border-color:  rgba(140, 138, 138, 0.22);
           border-radius: 6px;
+     }
+
+     .bxForm{
+        display: block;
+        margin: 15px 8px;
+        padding: 5px;
      }
 
 
@@ -172,7 +175,7 @@
         margin-bottom: 5px;
    }
    .pnlHead>h1,.pnlHead>h2,.pnlHead>p{
-        font-size: 14px;
+        font-size: 16.4px;
         font-weight: lighter;
         white-space: nowrap;
         color: white;
@@ -222,11 +225,6 @@
         padding-left: 8px;
    }
 
-   .col2{
-      width: 46%;
-      margin: 0;
-   }
-
    input[type="submit"],input[type="button"]{
         background-color: rgba(180, 180, 180, 0.3);
         font-size: 18px;
@@ -255,6 +253,13 @@
         border: 0px 0px 2px 0px;
         border-color:  rgba(140, 138, 138, 0.22);
         border-radius: 6px;
+   }
+
+   .bxForm{
+      display: block;
+      margin: 5px 0;
+      padding: 5px;
+      box-sizing: border-box;
    }
 
 }
