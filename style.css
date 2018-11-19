@@ -4,78 +4,55 @@
      html, body {
          background-color: #fff;
          font-family: 'Raleway', sans-serif;
-         font-weight: 100;
-         height: 100vh;
          margin: 0;
      }
 
-     .full-height {
-         height: 100vh;
-     }
-
-     .flex-center {
-         align-items: center;
-         display: flex;
-         justify-content: center;
-     }
-
-     .position-ref {
-         position: relative;
-     }
-
-     .top-right {
-         position: absolute;
-         right: 10px;
-         top: 18px;
-     }
-
-     .content {
-         text-align: center;
-     }
-
-     .title {
-         font-size: 64px;
-         color: #636b6f;
-     }
-
-     .links > a {
-         color: #636b6f;
-         padding: 0 25px;
-         font-size: 12px;
-         font-weight: 600;
-         letter-spacing: .1rem;
-         text-decoration: none;
-         text-transform: uppercase;
-     }
-
-     .m-b-md {
-         margin-bottom: 30px;
-         font-weight: 100;
+     .content{
+        padding: 50px;
      }
 
      .thin{
         font-weight: 100;
      }
+
      .fl-purple{
-        color: #f3136a !important;
+        color:#ff0063;
      }
-     .clear{
-        clear: both;
+
+      /* title font */
+     .fl-lg-txt{
+        font-size: 60px;
      }
-     .fl-container{
-        display: inline-flex;
-        flex-direction: row;
+
+     .fl-flx-cnter,.fl-container{
+        display: flex;
         justify-content: center;
-        width: 100%;
-        margin: 0 auto;
+         text-align: center;
+        /*flex-direction: row;*/
      }
-     .fl-container>.fl-box{
-       background-color: #f3136a;
-       width: 200px;
-       height: 150px;
-       margin: 20px;
-       text-align: center;
-       line-height: 150px;
-       font-size: 60px;
-       color: #fff;
-     }
+
+      .fl-box{
+         width: 200px;
+         height: 150px;
+         background-color: #ff0063;
+         text-align: center;
+         margin: 0 2%;
+         font-size: 40px;
+         color: white;
+         line-height: 150px;
+      }
+
+     @media only screen and (max-width: 768px) {
+         .fl-lg-txt{
+            font-size: 20px;
+         }
+
+         .fl-box{
+            width: 70px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 33px;
+         }
+         .fl-lg-txt:n
+
+      }
